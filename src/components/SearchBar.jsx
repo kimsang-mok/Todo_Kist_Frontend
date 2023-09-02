@@ -3,9 +3,10 @@ import "../styles/SearchBar.scss"
 import TodoContext from '../contexts/TodoContexts';
 import axios from 'axios';
 import useOutSideClick from '../hooks/useOutSideClick';
+const API_BASE = import.meta.env.VITE_API_BASE
 
 const SearchBar = (props) => {
-    const BASE_API = "http://localhost:3005/todos/" + props.listName;
+    const BASE_API = API_BASE + props.listName;
     const searchRef = useRef(null)
     const [searchTerm, setSearchTerm] = useState('');
     const [results, setResults] = useState([]);
