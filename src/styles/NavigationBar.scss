@@ -1,0 +1,64 @@
+@import "./variable.scss";
+
+.navigation-bar {
+    background-color: $primary;
+    display: flex;
+    margin: 0;
+    padding: 8px 16px;
+    align-items: center;
+    gap: 22px;
+    position: sticky;
+
+    height: 48px;
+
+    .toggle,
+    .logo,
+    .add-button,
+    .star {
+        height: 40px;
+        width: 40px;
+
+        img,
+        svg {
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
+
+
+@media (max-width:768px) {
+    .navigation-bar {
+        height: 32px;
+
+        .toggle,
+        .logo,
+        .add-button,
+        .star {
+            height: 28px;
+            width: 28px;
+
+            img {
+                width: 28px;
+                height: 28px;
+            }
+        }
+    }
+
+    .search-container {
+        height: 32px;
+    }
+
+
+}
+
+@media (max-width: 413px) {
+    .navigation-bar {
+
+        .logo,
+        .add-button,
+        .star {
+            display: none;
+        }
+    }
+}

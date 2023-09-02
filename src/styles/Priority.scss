@@ -1,0 +1,36 @@
+@import "./variable.scss";
+
+.priority {
+    position: relative;
+    width: auto;
+    margin: 0 0 16px 0;
+    font-size: 16px;
+    display: inline;
+    border-radius: 0.5rem;
+}
+
+.select-priority {
+    position: absolute;
+    background-color: $background;
+    padding: 0;
+    width: 168px;
+    font-size: 16px;
+    margin: 10px -16px;
+    border-radius: 0.8rem;
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            border-radius: 0.8rem;
+
+            padding: 8px 8px;
+
+            &:hover {
+                background-color: $secondary;
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.todo-container {
+    .modal-delete {
+        position: relative;
+        z-index: 3;
+    }
+}
+
+.sidebar-container {
+    .modal-background {
+        width: 340%;
+    }
+
+
+    .modal-delete {
+        width: 100%;
+
+        .modal-background {
+            width: 340%;
+            height: 100%;
+            align-items: center;
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .sidebar-container {
+        .modal-background {
+            width: 100%;
+        }
+
+        .modal-delete {
+
+            .modal-background {
+                width: 100%;
+            }
+        }
+    }
+}
